@@ -27,6 +27,7 @@ func DetectShell() string {
 			}
 		}
 	}
+	// TODO: https://github.com/UserExistsError/conpty
 
 	if path, err := exec.LookPath("sh"); err == nil {
 		return path
